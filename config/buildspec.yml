@@ -23,6 +23,7 @@ phases:
     commands:
       - echo Pushing the Docker images...
       - docker push $YASGUI_REPOSITORY_URI:latest
+      - docker push $YASGUI_REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
       - printf '[{"name":"yasgui","imageUri":"%s"}]' $YASGUI_REPOSITORY_URI:$IMAGE_TAG  > imagedefinitions.json
 artifacts:
