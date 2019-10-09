@@ -109978,12 +109978,10 @@ module.exports = {
 	 * For now, just store this list (scraped from the SPARQLES website) statically..
 	 */
   catalogueEndpoints: [
-    { endpoint: " http://stage-2-neptune.aws.getty.edu:8182/sparql",
-      title: "Stage 2 Neptune - Getty" },
-    { endpoint: " http://stage-1-neptune.aws.getty.edu:8182/sparql", 
-      title: "Stage 1 Neptune - Getty" },
-    { endpoint: "http://affymetrix.bio2rdf.org/sparql", 
-      title: "affynetrix" }
+    { endpoint: "http://sparql.aws.getty.edu/sparql1",
+      title: "Stage 1 - stage-1-neptune.aws.getty.edu" },
+    { endpoint: "http://sparql.aws.getty.edu/sparql2",
+      title: "Stage 2 - stage-2-neptune.aws.getty.edu" }
   ]
 };
 
